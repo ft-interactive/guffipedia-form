@@ -11,6 +11,10 @@ body {
   margin: 0;
   border: 0;
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+
+  main {
+    padding: 0 15px 0 15px;
+  }
 }
 
 
@@ -25,5 +29,25 @@ body {
   }
 }
     .masthead {
-      height: 18px;
+      max-width: 600px;
+      width: 100%;
     }
+
+.agree[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.o-forms-label[for=agree] {
+  z-index: 0;
+}
+
+.o-forms-errortext {
+  display: none;
+}
+
+.required {
+  color: #D12229;
+  font-style: italic;
+}
