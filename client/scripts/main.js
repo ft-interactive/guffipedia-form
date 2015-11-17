@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // remove the 300ms tap delay on mobile browsers
   FastClick.attach(document.body);
 
-  document.getElementById("jargon-form").addEventListener("submit", function(event) {
+  document.getElementById("guffipedia-form").addEventListener("submit", function(event) {
 
   	let error = false;
 
