@@ -1,5 +1,6 @@
 import oHoverable from 'o-hoverable';
 import FastClick from 'fastclick';
+import oGrid from 'o-grid';
 
 document.addEventListener('DOMContentLoaded', () => {
   // make hover effects work on touch devices
