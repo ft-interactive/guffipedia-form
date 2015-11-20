@@ -68,6 +68,16 @@ h1 {
   border-bottom: 1px solid #e9decf;
 }
 
+.sub{
+  font-family: MetricWeb;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  margin-top: 8px;
+  background-color: #ccc2c2;
+  border-width: 0px;
+  color: #ffffff;
+}
+
 @include oGridRespondTo(S) {
   .headshot {
     img {
