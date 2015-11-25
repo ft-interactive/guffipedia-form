@@ -1,8 +1,7 @@
 language: node_js
 node_js:
   - 'stable'
-before_install: 'bundle && npm install --global bower && bower install'
-before_script: 'scss-lint client/**/*.scss'
+before_install: 'bundle'
 deploy:
   skip_cleanup: true
   provider: script
