@@ -4,3 +4,14 @@ node_js:
   - 'stable'
 before_install: 'bundle && npm install --global bower && bower install'
 before_script: 'scss-lint client/**/*.scss'
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./deploy.sh
+  on:
+    branch: master
+env:
+  GITHUB_USER: ft-interactive
+  GITHUB_REPO: guffipedia-form
+  GIT_DEPLOY_DIR: dist
+  GIT_DEPLOY_BRANCH: gh-pages
