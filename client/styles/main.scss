@@ -163,3 +163,18 @@ h1 {
   color: #d12229;
   font-style: italic;
 }
+
+.o-buttons {
+  display: block;
+  color: #ffffff;
+  font-family: MetricWeb;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  width: 100px;
+  margin-top: 8px;
+  background-color: #ccc2c2;
+  border-width: 0px;
+  &:hover {
+    color: inherit;
+  }
+}
