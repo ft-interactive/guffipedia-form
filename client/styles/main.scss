@@ -14,7 +14,7 @@ body {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
 
   main {
-    @include oGridColspan((default: full-width, M: 10, L: 8));
+    @include oGridColspan((default: full-width, M: 10, L: 8, XL: 6));
     @include oGridCenter;
     padding: 0 15px;
   }
