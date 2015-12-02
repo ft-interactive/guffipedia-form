@@ -32,36 +32,61 @@ body {
   }
 }
     .masthead {
-      height: 18px;
+      height: 14px;
+      @include oGridRespondTo(S) {
+        height: 18px;
+      }
     }
 
 h1 {
-  font-family: MetricWeb;
-  font-weight: 200;
-  text-align: center;
-  font-size: 4em;
-  line-height: 1.4em;
-  margin: 0px;
-  color: #000000;
-  a {color: #000000;;
-    text-decoration: none}
-}
+    font-family: MetricWeb;
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    line-height: 1.4em;
+    margin: 0px;
+    color: #000000;
+    @include oGridRespondTo(S) {
+      font-size: 4em;
+      text-align: left;
+    }
+    a {
+      color: black;
+      &:hover {
+        color: black;
+      }
+    }
+  }
 
 .subheader {
-  width: 100%;
-  font-family: MetricWeb;
-  font-size: 1.8em;
-  line-height: 1.1em;
-  text-align: center;
-  margin-top: 2px;
-  color: #6a6d68;
-}
+    width: 80%;
+    font-family: MetricWeb;
+    font-size: 1em;
+    line-height: 1.1em;
+    text-align: left;
+    margin-top: 2px;
+    color: #6a6d68;
+    @include oGridRespondTo(S) {
+      font-size: 1.8em;
+      text-align: left;
+      width: 75%;
+    }
+  }
 
 .headshot {
-   img {width: 170px;
-    display: block;
-    margin: 0 auto;}
-}
+    img {
+      width: 75px;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      @include oGridRespondTo(S) {
+        width: 154px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
 
 .line {
   margin-top: 5px;
