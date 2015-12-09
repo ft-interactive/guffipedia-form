@@ -17,9 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   	let wordInputContainer = wordInput.parentNode;
   	let wordErrorText = document.getElementsByClassName("o-forms-errortext entry.544003616")[0];
 
-  	let agreeCheckbox = this.elements["agree"];
-  	let agreeErrorText = document.getElementsByClassName("o-forms-errortext agree")[0];
-
   	if(wordInput.value === "") {
 	  	event.preventDefault();
   		error = true;
@@ -33,21 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
   			}
   		});
   	}
-  	if(!agreeCheckbox.checked) {
-	  	event.preventDefault();
-  		error = true;
-  		agreeError();
-  		agreeCheckbox.addEventListener("change", function() {
-  			if(this.checked) {
-  				agreeValid();
-  			} else {
-  				agreeError();
-  			}
-  		});
-  	}
   	if(!error) {
   		wordValid();
-  		agreeValid();
   	}
 
   	function wordError() {
@@ -58,14 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   	function wordValid() {
   		wordInputContainer.className = "o-forms-group";
   		wordErrorText.style.display = "none";
-  	}
-
-  	function agreeError() {
-  		agreeErrorText.style.display = "block";
-  	}
-
-  	function agreeValid() {
-  		agreeErrorText.style.display = "none";
   	}
   });
 });
