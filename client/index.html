@@ -53,7 +53,9 @@
 
       <div class="formHead"><Strong>Suggest your own entry to Lucy</Strong></div>
       
-      <form id="guffipedia-form" action="https://docs.google.com/a/ft.com/forms/d/1Cgdoaf98Y5jVfAAHi3AKxN4qRZxifQfuKaqHV7IRn2E/formResponse" method="POST">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='../guffipedia/thanks.html';}"></iframe>
+      <form action="https://docs.google.com/a/ft.com/forms/d/1Cgdoaf98Y5jVfAAHi3AKxN4qRZxifQfuKaqHV7IRn2E/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="o-forms-group">
           <label class="o-forms-label" for="entry.544003616">Guff word or phrase<span class="required">(required)</span></label>
           <input type="text" class="o-forms-text" name="entry.544003616" id="entry.544003616" />
