@@ -47,6 +47,7 @@ gulp.task('html', done => {
   });
 
   gulp.src('client/**/*.html')
+    .pipe(preprocess({context: { ENV: env }}))
     .pipe(assets)
     .pipe($.if('*.js', $.uglify({output: {inline_script: true}})))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
