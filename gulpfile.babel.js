@@ -3,6 +3,7 @@ import gulp from 'gulp';
 import igdeploy from 'igdeploy';
 import obt from 'origami-build-tools';
 import path from 'path';
+import preprocess from 'gulp-preprocess';
 import runSequence from 'run-sequence';
 
 
