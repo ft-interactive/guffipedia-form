@@ -1,5 +1,5 @@
 {
-  "name": "origami-product-boilerplate",
+  "name": "guffipedia-form",
   "private": true,
   "dependencies": {
     "normalize.css": "~3.0.3",
